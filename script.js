@@ -54,3 +54,11 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.1em solid #666 }";
   document.body.appendChild(css);
 };
+
+function hbody() {
+  document.body.style.overflowY = 'hidden';
+};
+
+function sbody() {
+  document.body.style.overflowY = 'visible';
+};
