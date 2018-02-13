@@ -1,4 +1,4 @@
-var config = {
+  var config = {
     apiKey: "AIzaSyBVlO9P1EbwbfzcOXkFYJ-c_XD2hb_pUxQ",
     authDomain: "submitterform-f9681zzb.firebaseapp.com",
     databaseURL: "https://submitterform-f9681zzb.firebaseio.com",
@@ -50,19 +50,3 @@ function saveform(name, email, phone, company, comments){
 };
 
 
-function hbody() {
-  document.body.style.overflowY = 'hidden';
-};
-
-function sbody() {
-  document.body.style.overflowY = 'visible';
-};
-
-window.addEventListener('load', function(){
-    var allimages= document.getElementsByTagName('img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
-    }
-}, false)

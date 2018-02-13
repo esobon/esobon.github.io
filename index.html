@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style1.css">
     <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
-	<script src="script.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113128657-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -16,6 +15,7 @@
 
 	  gtag('config', 'UA-113128657-1');
 	</script>
+	<script src="script.js"></script>
   </head>
   
   
@@ -181,9 +181,9 @@
 			  
 			  <br>
               <br>
-			  <h4>Code Snippets</h4>
+			  <h4>Code Snippet</h4>
 			   <label for="pex7" class="pexthumb"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/cse1.jpg" alt="Code Snippet Example Thumbnail - Example 1" class="tport" draggable="false"/></label>
-			   <label for="pex8" class="pexthumb"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/cse1.jpg" alt="Code Snippet Example Thumbnail - Example 2" class="tport" draggable="false"/></label>
+
 			  
 			  <br>
               <br>
@@ -192,11 +192,7 @@
               <label for="pex1" class="pexthumb" onclick="hbody()"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example1-1.jpg" alt="Modified Image Example Thumbnail - Example 1" class="tport" draggable="false"/></label>
               
               <label for="pex2" class="pexthumb" onclick="hbody()"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example2-1.jpg" alt="Modified Image Example Thumbnail - Example 2" draggable="false"/></label>
-              
-              <label for="pex3" class="pexthumb" onclick="hbody()"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example3-1.jpg" alt="Modified Image Example Thumbnail - Example 3" draggable="false"/></label>
-              
-              <label for="pex4" class="pexthumb" onclick="hbody()"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example4-1.jpg" alt="Modified Image Example Thumbnail - Example 4" draggable="false"/></label>
-              
+                            
               <label for="pex5" class="pexthumb" onclick="hbody()">  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example6-1.jpg" alt="Modified Image Example Thumbnail - Example 5" draggable="false"/></label>
               
               <label for="pex6" class="pexthumb" onclick="hbody()"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/example7-1.jpg" alt="Modified Image Example Thumbnail - Example 6" draggable="false"/></label>
@@ -206,7 +202,10 @@
 			   <h4>3D-Print Examples</h4>
 			  
 			  <p> Coming Soon! </p>
-       
+			  
+			  <br>
+			  <br>
+			<h4>Want to see more examples?<br>Click <label for="toggle5" style="text-decoration: underline">Here</label> or write me an email at <br>contact@eugenesobon.com  </h4>
               
               <input class="toggler" type="checkbox" id="pex1" /><div id="pex1in" class="pexmen">
               <label for='pex1' onclick="sbody()"><div class="xit">&#10005;</div></label>
@@ -415,6 +414,23 @@
     </div>
 
   </body>
-  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-  <script src="submitform.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+<script src="submitform.js"></script>
+ <script>
+    function hbody() {
+  document.body.style.overflowY = 'hidden';
+};
+function sbody() {
+  document.body.style.overflowY = 'visible';
+};
+window.addEventListener('load', function(){
+    var allimages= document.getElementsByTagName('img');
+    for (var i=0; i<allimages.length; i++) {
+        if (allimages[i].getAttribute('data-src')) {
+            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+        }
+    }
+}, false);
+</script>
 </html>
