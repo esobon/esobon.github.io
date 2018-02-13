@@ -47,5 +47,22 @@ function saveform(name, email, phone, company, comments){
 		company : company,
 		comments : comments
 	});
-	
-}
+};
+
+
+function hbody() {
+  document.body.style.overflowY = 'hidden';
+};
+
+function sbody() {
+  document.body.style.overflowY = 'visible';
+};
+
+window.addEventListener('load', function(){
+    var allimages= document.getElementsByTagName('img');
+    for (var i=0; i<allimages.length; i++) {
+        if (allimages[i].getAttribute('data-src')) {
+            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+        }
+    }
+}, false)
