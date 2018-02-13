@@ -152,26 +152,10 @@ body
   cursor: pointer;
 }
 
-progress
+.sklist div
 {
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-}
-
-
-progress::-webkit-progress-bar {  
-  background-color: #F6F7F6;
-}  
-
-progress::-webkit-progress-value {
-  background-color:  #747F93;
-}
-
-progress::-moz-progress-bar {
-  background-color:  #747F93;
+  margin-top:8px;
+  padding-bottom: 10px;
 }
 
 .navbox:active, .navbox:focus
@@ -504,6 +488,18 @@ label {
 }
 
 #pex7:checked + #pex7in
+{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s, visibility 1s;
+  -moz-transition: opacity 1s, visibility 1s;
+  -o-transition: opacity 1s, visibility 1s;
+  -ms-transition: opacity 1s, visibility 1s;
+  transition: opacity 1s, visibility 1s;
+}
+
+#pex8:checked + #pex8in
 {
   display: block;
   visibility: visible;

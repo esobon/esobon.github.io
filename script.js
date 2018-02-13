@@ -55,10 +55,4 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-function hbody() {
-  document.body.style.overflowY = 'hidden';
-};
 
-function sbody() {
-  document.body.style.overflowY = 'visible';
-};
