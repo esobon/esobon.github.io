@@ -2,7 +2,7 @@
   
 .exampwrap
 {
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
 }
@@ -17,7 +17,15 @@
   display: none;
 }
 
-
+.mobilewarn
+{
+	display: block;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 50%;
+}
 .ibody
 {
   display: none;
@@ -33,16 +41,16 @@
 
 .ibottom
 {
+	display: none;
   width: 100%;
   height: 40px;
   display: block;
   text-align: center;
-  box-shadow
 }
 
 .ihomebutton
 {
-  display: inline-block;
+  display: none;
   margin-top: 5px;
   width: 30px;
   height: 30px;
@@ -57,6 +65,7 @@
   
 .ribbon
   {
+	display: none;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -73,7 +82,7 @@
 
 .ribbon a
   {
-    display:inline-block;
+    display:none;
     background-color: #9baac4;
     color: white;
     text-align: center;
@@ -99,6 +108,12 @@
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 2px 2px 15px 10px rgba(1,1,1,.1);
+}
+
+.mobilewarn
+{
+	display: none;
+	width: 0%;
 }
 
 .iinfo

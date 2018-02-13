@@ -182,7 +182,7 @@
 			  <br>
               <br>
 			  <h4>Code Snippet</h4>
-			   <label for="pex7" class="pexthumb"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/cse1.jpg" alt="Code Snippet Example Thumbnail - Example 1" class="tport" draggable="false"/></label>
+			   <label for="pex7" class="pexthumb" onclick="hbody()"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/cse1.jpg" alt="Code Snippet Example Thumbnail - Example 1" class="tport" draggable="false"/></label>
 
 			  
 			  <br>
@@ -318,7 +318,7 @@
 			  <input class="toggler" type="checkbox" id="pex7" />
 			  <div id="pex7in" class="pexmen">
               <label for='pex7' onclick="sbody()"><div class="xit">&#10005;</div></label>
-			
+			<div class="mobilewarn">The screen on this device is too small to view this example properly!<br> Come check this example out on a computer or tablet (on landscape) for full features!</div>
 				<div class="exampwrap">
 				<div class="filler1">
 				<div class="cbody">
@@ -418,12 +418,6 @@
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
 <script src="submitform.js"></script>
  <script>
-    function hbody() {
-  document.body.style.overflowY = 'hidden';
-};
-function sbody() {
-  document.body.style.overflowY = 'visible';
-};
 window.addEventListener('load', function(){
     var allimages= document.getElementsByTagName('img');
     for (var i=0; i<allimages.length; i++) {
@@ -432,5 +426,13 @@ window.addEventListener('load', function(){
         }
     }
 }, false);
+
+function hbody() {
+  document.body.style.overflowY = 'hidden';
+};
+function sbody() {
+  document.body.style.overflowY = 'visible';
+};
+
 </script>
 </html>
