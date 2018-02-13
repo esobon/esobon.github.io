@@ -15,7 +15,6 @@
 
 	  gtag('config', 'UA-113128657-1');
 	</script>
-	<script src="script.js"></script>
   </head>
   
   
@@ -417,22 +416,5 @@
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
 <script src="submitform.js"></script>
- <script>
-window.addEventListener('load', function(){
-    var allimages= document.getElementsByTagName('img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
-    }
-}, false);
-
-function hbody() {
-  document.body.style.overflowY = 'hidden';
-};
-function sbody() {
-  document.body.style.overflowY = 'visible';
-};
-
-</script>
+<script src="script.js"></script>
 </html>
