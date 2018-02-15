@@ -364,6 +364,16 @@ label {
 	margin-right: 4px;
 }
 
+.smbut:hover
+{
+	opacity: .6;
+	cursor: pointer;
+}
+.smbut:active
+{
+	opacity: .6;
+}
+
 .next, .prev{
   content:'';
   color: #fff;
