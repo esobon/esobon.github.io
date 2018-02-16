@@ -511,6 +511,14 @@ label {
 }
 
 
+footer
+{
+		width: 100%;
+		font-family: 'Sanchez', serif;
+		font-size: .6em;
+		background-color: white;
+		text-align: center;
+}
 
 @media screen and (orientation:landscape)
 {
